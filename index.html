@@ -21,7 +21,7 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="col-11 col-sm-9 col-md-8 col-lg-8">
-            <div class="card shadow rounded-5">
+            <div class="card shadow rounded-5" id="prescriptionCard">
                 <!-- Card Header -->
                 <div class="card-header bg-primary bg-gradient text-white text-center p-4 rounded-top-5">
                     <h1 class="fw-bolder fs-1">Quick Rx</h1>
@@ -319,7 +319,7 @@
 
         // Function to print the prescription as JPG with extra space below
             function printPrescription() {
-                const element = document.getElementById('generatedPrescriptionSection');
+                const element = document.getElementById('prescriptionCard');
 
                 // Hide action buttons before capturing
                 const buttons = element.querySelectorAll('.no-print');
